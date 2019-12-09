@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<style>
+  body {
+    background-color: #ddd;
+  }
+  
+  .button {
+    background-color: black;
+    border: none;
+    color: #ddd;
+    padding: 7px 7px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button:hover {
+    background-color: #ddd;
+    border: 2px solid #000;
+    color: #000;
+  }
+
+  h1 {
+    text-align: center
+  }
+  
+  p {
+    text-align: center
+  }
+
+  .input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+
+  .input_left {
+    background-color: #ddd;
+    border: 2px solid #000;
+    margin: 0;
+    width: 14%;
+  }
+  
+  .input_right {
+    background-color: #ddd;
+    border: 2px solid #000;
+    border-left: 0px;
+    margin: 0;
+    width: 14%;
+  }
+
+  video {
+    border: 2px solid #000;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+      Pista 3 - 1
+    </title>
+    <script type="text/javascript">
+      function checkAnswer(){
+        var letter1= document.getElementById("letter_1").value;
+        var letter2= document.getElementById("letter_2").value;
+        var letter3= document.getElementById("letter_3").value;
+        var letter4= document.getElementById("letter_4").value;
+        var letter5= document.getElementById("letter_5").value;
+        var letter6= document.getElementById("letter_6").value;
+
+        if ((letter1 == "A") || (letter1 == "a")){var letter1True = true;}
+        if ((letter2 == "V") || (letter2 == "v")){var letter2True = true;}
+        if ((letter3 == "A") || (letter3 == "a")){var letter3True = true;}
+        if ((letter4 == "T") || (letter4 == "t")){var letter4True = true;}
+        if ((letter5 == "A") || (letter5 == "a")){var letter5True = true;}
+        if ((letter6 == "R") || (letter6 == "r")){var letter6True = true;}
+
+        if (letter1True && letter2True && letter3True && letter4True && letter5True && letter6True){
+          window.open("Pista3_2.html", replace = true);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <article>
+      <h1>
+        Pista 1 - 1
+      </h1>
+      <p>
+        Resolve esta pista para conseguires saber a minha série preferida.
+      </p>
+    </article>
+    <section class="video">
+      <video src="Pista3_1.mp4" height="180" width="320" controls></video>
+    </section>
+    <br>
+    <form>
+      <section class="input">
+      	<input type="text" class="input_left" name="letter_1" id="letter_1" minlength="1" maxlength="1" size="1" width="20" required><!--
+        --><input type="text" class="input_right"  name="letter_2" id="letter_2" minlength="1" maxlength="1" size="1" width="20" required><!--
+        --><input type="text" class="input_right"  name="letter_3" id="letter_3" minlength="1" maxlength="1" size="1" width="20" required><!--
+        --><input type="text" class="input_right"  name="letter_4" id="letter_4" minlength="1" maxlength="1" size="1" width="20" required><!--
+        --><input type="text" class="input_right"  name="letter_5" id="letter_5" minlength="1" maxlength="1" size="1" width="20" required><!--
+        --><input type="text" class="input_right"  name="letter_6" id="letter_6" minlength="1" maxlength="1" size="1" width="20" required>
+      </section>
+      <br>
+      <input type="button" class="button" value="Confirmar" onclick="checkAnswer();">
+    </form>
+    <br>
+    <br>
+    <a href="./pista3_1_Dica1.html" target="_blank">
+      <button type="button" class="button">
+        Dica 1
+      </button>
+    </a>
+    <br>
+    <a href="./pista3_1_Dica2.html" target="_blank">
+      <button type="button" class="button">
+        Dica 2
+      </button>
+    </a>
+    <br>
+    <a href="./pista3_1_Dica3.html" target="_blank">
+      <button type="button" class="button">
+        Dica 3
+      </button>
+    </a>
+    <br>
+    <a href="./pista3_1_Dica4.html" target="_blank">
+      <button type="button" class="button">
+        Dica 4
+      </button>
+    </a>
+  </body>
+</html>
